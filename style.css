@@ -1,0 +1,423 @@
+*, *:after, *:before /* subtracts padding from [margin] width*/ {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+      
+* {margin: 0; padding:0}
+
+body {
+  background:url('images/subtle_dots.png');
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  line-height:1.25;
+}
+      
+#page-wrap {
+  width: 80%;
+  min-width:1000px;
+  max-width:1024px;
+  margin:30px auto 0 auto;
+  border: 1px dotted black;
+  padding: 20px;
+}
+
+#phone {
+	margin: 0 0 -5px 10px;
+}
+
+[class*='row'] {
+  overflow:hidden;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* nav related */
+.row_nav nav li {
+  color:#fff;
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  height: 25px;
+  width:100px;
+  font-size: 1.25em;
+  margin-bottom: 20px;
+  /*margin-left:20px;*/
+}
+
+.row_footer {
+  margin-bottom: 30px;
+}
+
+/* google+ review: */
+#newreview {
+  position: absolute;
+  top:92px;
+}
+/* end google+ review */
+
+[class*='col-'] {
+  float: left;
+  padding:10px 5px 0 5px;
+}
+
+.col-1-3 {
+  width: 33.33%;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+.col-2-3 {
+  width: 66.66%;
+}
+
+.col-1-4 {
+  width: 25%;
+}
+
+.col-1-8 {
+  width: 12.5%;
+}
+
+.col-whole {
+  width: 100%;
+}
+
+#mod0 {
+  height: 25px;
+  background:#1c4d8c;
+}
+
+/*Our Purpose*/
+#mod2 {
+  padding:20px;
+  background:#907465;
+  color:#fff;
+}
+
+/*Our Customers*/
+#mod3 {
+  padding:20px;
+  padding-bottom:70px;
+  background:#332525;
+  color:#fff;
+  height:360px;
+  }
+
+/*Meet the Crew*/
+#mod4 {
+  padding:20px;
+  background:#212020;
+  color:#fff;
+  height:360px;
+}
+
+#mod1_about {
+  padding:20px;
+  border-bottom:0.5px dotted #212020;
+}
+
+#mod2_about {
+  padding:50px;
+  background:#332525;
+  color:#fff;
+  height:322px;
+}
+
+#mod3_about {
+  padding-left:20px;
+}
+
+.mod3_expertise {
+  padding: 20px;
+  border-bottom: 5px dotted #212020;
+  height: 120px;
+}
+
+.mod4_expertise {
+  padding:40px;
+  background:#332525;
+  color:#fff;
+  height:120px;
+}
+
+.arrow {
+ float: right;
+}
+
+.mod2_ideas {
+  padding:16px;
+/*  box-shadow: 10px 10px 5px #888888;*/
+  border: 2px groove #d3d3d3;
+}
+
+img.radius {
+  border-radius: 10px;
+}
+
+.mod2_contact {
+  padding:20px;
+}
+
+header {
+  float: left;
+  letter-spacing: 0.25rem;
+  line-height: 0.95;
+  margin-top: 30px;
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  margin-bottom: 10px;    
+}
+
+h2#right {
+  margin-bottom: 5px;
+}
+
+h2#close {
+  margin-bottom: -15px;
+}
+
+h2#contact {
+  margin:20px 20px;
+}
+
+small#in {
+  margin-left: 20px;
+}
+
+img#trowel {
+  display: block;
+  float: left;
+  margin-left: 10px;
+  border:none; /* for IE */
+}
+
+#address {
+  padding-top: 3px;
+  color: #fff;
+  text-align: center;
+}
+
+.hov       { background:#1c4d8c; } /*blue color*/
+.hov:hover { color:#fff; background:#d9b54a; }
+
+li#page {
+  background:#d9b54a;
+}
+
+p {
+  font-size: 1.025rem;
+  margin-bottom: 10px; 
+}
+
+p#left {
+  margin-left: 20px;
+}
+
+img#adam {
+  display:block;
+  float:left;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+/*for contact page*/
+p#warn {
+  color:#DE5437;
+}
+
+#subbutton {
+  display:block;
+  margin-top:5px;
+  padding: 3px 7px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: #565656;
+}
+
+input {
+  margin-right:20px;
+}
+
+div#message {
+  margin-top:20px;
+}
+
+label {
+  display:block;
+  font-family:arial;
+  font-size:14px;
+  margin-left:2px;
+}  
+/*end for contact page*/
+
+/* end nav related */   
+
+a#hlink:link {color: #000; text-decoration: none;}
+a#hlink:visited {color:#000; text-decoration:none;}
+a#hlink:hover {color:#000; text-decoration:none;}
+a#hlink:active {color:#000; text-decoration:none;}
+
+a:link {color:#fff; text-decoration:none;}
+a:s {color:#fff; text-decoration:none;}
+a:hover {color:#fff; text-decoration:none;}
+a:visited {color:#fff;}
+a:active {color:#fff; text-decoration:none;}
+a#review:hover {text-decoration:none;}
+
+/* begin slideshow style: */
+#slides {
+  display: none
+}
+
+#slides .slidesjs-navigation {
+  margin-top:5px;
+}
+
+a.slidesjs-next,
+a.slidesjs-previous,
+a.slidesjs-play,
+a.slidesjs-stop {
+  background-image: url(slidesjs/examples/playing/img/btns-next-prev.png);
+  background-repeat: no-repeat;
+  display:block;
+  width:12px;
+  height:18px;
+  overflow: hidden;
+  text-indent: -9999px;
+  float: left;
+  margin-right:5px;
+}
+
+a.slidesjs-next {
+  margin-right:10px;
+  background-position: -12px 0;
+}
+
+a:hover.slidesjs-next {
+  background-position: -12px -18px;
+}
+
+a.slidesjs-previous {
+  background-position: 0 0;
+}
+
+a:hover.slidesjs-previous {
+  background-position: 0 -18px;
+}
+
+a.slidesjs-play {
+  width:15px;
+  background-position: -25px 0;
+}
+
+a:hover.slidesjs-play {
+  background-position: -25px -18px;
+}
+
+a.slidesjs-stop {
+  width:18px;
+  background-position: -41px 0;
+}
+
+a:hover.slidesjs-stop {
+  background-position: -41px -18px;
+}
+
+.slidesjs-pagination {
+  margin: 7px 0 0;
+  float: right;
+  list-style: none;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(slidesjs/examples/playing/img/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+#slides a:link,
+#slides a:visited {
+  color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+  color: #9e2020
+}
+
+.navbar {
+  overflow: hidden
+}
+
+#slides {
+  display: none
+}
+
+.container {
+  margin: 0 auto
+}
+
+/* For tablets & smart phones */
+@media (max-width: 767px) {
+  body {
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+  .container {
+  width: auto
+  }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+  .container {
+  width: auto
+  }
+}
+
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 979px) {
+  .container {
+  width: 724px
+  }
+}
+
+/* For larger displays */
+@media (min-width: 1200px) {
+  .container {
+  width: 1170px
+  }
+} 
+/* end slideshow style */
+
+footer {
+  text-align:center;
+}
